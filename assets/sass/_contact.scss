@@ -1,0 +1,39 @@
+.main-contact {
+  & .heading--01 {
+    margin-bottom: 30px;
+  }
+  .section {
+    padding-top: 80px;
+  }
+}
+.contact {
+  &-address {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    & i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: $heading-color;
+    }
+    margin-bottom: 40px;
+  }
+  &-map {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

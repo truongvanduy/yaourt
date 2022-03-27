@@ -1,0 +1,38 @@
+.news {
+  &-aside {
+    &-img {
+      margin-bottom: 40px;
+    }
+  }
+  &-main {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-gap: 60px;
+    margin-bottom: 120px;
+  }
+  &-container {
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-direction:column;
+    gap: 60px 0;
+  }
+  &-item {
+    &-main {
+      display: flex;
+      gap: 0 20px;
+    }
+    &-text{
+      flex: 1;
+    }
+    &-img{
+      flex: 1;
+      border-radius: 10px;
+      overflow: hidden;
+      & img {
+        border-radius: 10px;
+      }
+    }
+  }
+}

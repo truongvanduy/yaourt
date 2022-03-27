@@ -1,0 +1,364 @@
+@mixin heading($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+// Base
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+.wrapper {
+  width: 100%;
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+// Components
+.section {
+  padding-top: var(--section-spacing);
+  &-main {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10%;
+  }
+  &-desc {
+    flex: 1;
+  }
+  &-img {
+    width: 100%;
+    max-width: 40%;
+    border-radius: 25px;
+    overflow: hidden;
+    & img, video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.x-link {
+  color: $heading-color;
+}
+
+// Headings
+.heading {
+  color: $heading-color;
+  font-family: 'Open Sans', sans-serif;
+  &.heading {
+    &--01 {
+      text-transform: uppercase;
+      margin-bottom: 80px;
+      @include heading(28px, 34px);
+    }
+    &--02 {
+      margin-bottom: 30px;
+      @include heading(24px, 28px);
+    }
+    &--03 {
+      margin-bottom: 20px;
+      @include heading(20px, 24px);
+    }
+    &--center {
+      text-align: center;
+    }
+    &--left {
+      text-align: left;
+    }
+  }
+}
+.text {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.5;
+  &--center {
+    text-align: center;
+  }
+}
+
+// Spacing
+.px {
+  padding-left: unset;
+  padding-right: unset;
+}
+.mx {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main {
+  margin-top: var(--header-height);
+}
+
+// Buttons
+.btn {
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: 0;
+}
+.back-to-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 100rem; 
+  color: $heading-color;
+  background-color: white;
+  border: 2px solid currentColor;
+  position: fixed;
+  bottom: 60px;
+  right: calc(20px + calc(calc(100% - var(--page-width)) / 2));
+  z-index: 1;
+  font-size: 30px;
+}
+
+// Form
+.form {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 2px solid #eee;
+  border-radius: 30px;
+  &-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 24px;
+    width: 100%;
+    max-width: var(--form-width);
+  }
+  & .heading--01 {
+    margin-bottom: 30px;
+  }
+  &-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: var(--form-width);
+  }
+  &-icon {
+    color: $heading-color;
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &[for*="message"] {
+      align-self: flex-start;
+      padding-top: 8px;
+    }
+  }
+  &-input, &-select, & textarea {
+    padding: 8px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.2s linear;
+  }
+  &-input:focus {
+    border-bottom: 2px solid $heading-color;
+  }
+  &-select {
+    color: inherit;
+  }
+  & textarea {
+    border-radius: 15px;
+    border: 2px solid #eee;
+    &:focus {
+      border-color: $heading-color;
+    }
+  }
+  &-radio {
+    &-group {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &-set {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 8px;
+      gap: 15px;
+      width: 100%;
+      cursor: pointer;
+      & + & {
+        margin-left: 10px;
+      }
+    }
+    &-input {
+      display: none;
+    }
+    &-label {
+      margin-left: 4px;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 0.7rem;
+      background-color: #eee;
+      cursor: pointer;
+      box-shadow: 0 0 0 4px #eee;
+      transition: all 0.25s linear;
+    }
+    &-input:checked + &-label {
+      box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba($color: $heading-color, $alpha: 1);
+      background-color: rgba($color: $heading-color, $alpha: 1);
+    }
+  }
+  &-checkbox {
+    &-set {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      cursor: pointer;
+    }
+    &-input {
+      display: none;
+    }
+    &-label {
+      flex-shrink: 0;
+      display: block;
+      position: relative;
+      cursor: pointer;
+      width: 42px;
+      height: 24px;
+      overflow: hidden;
+      background: #ccc;
+      border-radius: 100rem;
+      transition: background-color 0.25s linear;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        border-radius: 24px;
+        background-color: #fff;
+        transition: background-color 0.25s linear, transform 0.25s linear;
+      }
+    }
+    &-input:checked + &-label {
+      background-color: $heading-color;    
+      box-shadow: 0 0 10px 0 rgba($color: $heading-color, $alpha: .1);
+      &:after {
+        transform: translate(18px,-50%); 
+        background-color: white;
+      }   
+    }
+    &-message {
+      font-weight: 500;
+    }
+    &-input:checked ~ &-message {
+      color: $heading-color;
+      transition: all 0.2s linear;
+    }
+  }
+  &-submit {
+    font-weight: 500;
+    color: $heading-color;
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    max-width: var(--form-width);
+    border-radius: 100rem;
+    border: 2px solid $heading-color;
+    background-color: white;
+    position: relative;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    & span {
+      position: absolute;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $heading-color;
+      transition: all 0.25s ease-in;
+    }
+    &:hover {
+      color: white;
+      border-color: $heading-color;
+      box-shadow: 10px 10px 15px 0 rgba($color: $heading-color, $alpha: .12);
+      &::before {
+        width: 100%;
+        border-radius: 100rem;
+      }
+    }
+  }
+  &-message, &-get-password {
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+  }
+  &-meassage {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  &-get-password {
+    text-align: right;
+  }
+}
+
+// Animations
+@keyframes slide-to-30 {
+  to {
+    left: 30%;
+  }
+}
+@keyframes slide-to-45 {
+  to {
+    left: 45%;
+  }
+}
+@keyframes slide-to-63 {
+  to {
+    left: 63%;
+  }
+}
+
+// Breakpoints
+@media screen and (max-width: 1279.98px) {
+  .px {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .back-to-top {
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+

@@ -1,0 +1,24 @@
+
+.main {
+  &-about {
+    margin-bottom: 120px;
+  }
+}
+.about {
+  &-section {
+    padding-top: 120px;
+    & .heading--01 {
+      margin-bottom: 30px;
+    }
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-text.text--center {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+  }
+}

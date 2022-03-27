@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Freeeze</title>
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a id="logo" class="logo">
+        <img src="../assets/img/logo.png" alt="Freeeze">
+      </a>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="./trangchu.html" class="menu-link">Trang chủ</a>
+          </li>
+          <li class="menu-item">
+            <a href="./gioithieu.html" class="menu-link">Giới thiệu</a>
+          </li>
+          <li class="menu-item">
+            <a href="./sanpham.html" class="menu-link">Sản phẩm</a>
+          </li>
+          <li class="menu-item">
+            <a href="./tintuc.html" class="menu-link">Tin tức</a>
+          </li>
+          <li class="menu-item">
+            <a href="./dangnhap.html" class="menu-link">Đăng nhập</a>
+          </li>
+          <li class="menu-item">
+            <a href="./dangky.html" class="menu-link">Đăng ký</a>
+          </li>
+          <li class="menu-item">
+            <a href="./lienhe.html" class="menu-link">Liên hệ</a>
+          </li>
+          <div class="header-underline-bar"></div>
+        </ul>
+        <div class="header-action">
+          <label class="header-search">
+            <input type="text" name="search" id="#search" class="header-search-input" placeholder="Chọn kem thôi!">
+            <button class="header-search-btn btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </label>
+          <div class="header-cart btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="header-img">
+        <img class="header-img-1" src="../assets/img/header-img1.png" alt="">
+        <img class="header-img-2" src="../assets/img/header-img2.png" alt="">
+        <img class="header-img-3" src="../assets/img/header-img3.png" alt="">
+      </div>
+    </header>
+
+    <main class="main main-contact">
+      <section class="section contact-section px">
+        <h1 class="heading heading--01 heading--center">Liên hệ</h1>
+        <p class="contact-address">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Khoa Công nghệ thông tin và Truyền thông, trường Đại học Cần Thơ, đường 3/2 Xuân Khánh, Ninh Kiều, Cần
+            Thơ</span>
+        </p>
+        <div class="contact-map" id="map">
+          <img src="../assets/img/lienhe/map.png" alt="map">
+        </div>
+      </section>
+      <section class="section px">
+        <form action="#" class="form contact-form" autocomplete="off">
+          <div class="form-inner">
+            <h1 class="heading heading--01 heading--center">Góp ý</h1>
+            <div class="form-group contact-form-group">
+              <label class="form-icon" for="contact-name">
+                <i class="fa-solid fa-user-pen"></i>
+              </label>
+              <input type="text" name="full-name" id="contact-name" class="form-input contact-form-input"
+                placeholder="Họ tên">
+            </div>
+            <div class="form-group contact-form-group">
+              <label class="form-icon" for="contact-email">
+                <i class="fa-solid fa-envelope"></i>
+              </label>
+              <input type="email" name="full-name" id="contact-email" class="form-input contact-form-input"
+                placeholder="Email">
+            </div>
+            <div class="form-group contact-form-group">
+              <label class="form-icon" for="contact-type">
+                <i class="fa-solid fa-circle-dot"></i>
+              </label>
+              <select name="kind" id="contact-type" class="form-select contact-form-select">
+                <option value="0" disabled selected class="contact-form-option">Về sản phẩm / dịch vụ</option>
+                <option value="1" class="contact-form-option">Về sản phẩm</option>
+                <option value="2" class="contact-form-option">Về dịch vụ</option>
+              </select>
+            </div>
+            <div class="form-group contact-form-group">
+              <label class="form-icon" for="contact-message">
+                <i class="fa-solid fa-message"></i>
+              </label>
+              <textarea name="contact-message" id="contact-message" cols="30" rows="6" class="contact-form-message"
+                placeholder="Góp ý đi!"></textarea>
+            </div>
+            <button type="submit" class="form-submit contact-form-submit btn"><span>Gửi</span></button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-rights">© Bản quyền thuộc về FreeezeVN.</p>
+      <div class="footer-social">
+        <a href="" class="footer-social-link">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="" class="footer-social-link">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="" class="footer-social-link">
+          <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="btn back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

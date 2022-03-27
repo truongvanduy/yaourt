@@ -1,0 +1,21 @@
+.footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  flex-direction:column-reverse;
+  height: 80px;
+  margin-top: 120px;
+  &-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &-link {
+      font-size: 24px;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $nav-link-color;
+      }
+    }
+  }
+}

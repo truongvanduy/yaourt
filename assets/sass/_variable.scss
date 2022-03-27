@@ -1,0 +1,13 @@
+@use "sass:math";
+// Colors
+$nav-link-color: #ed4190;
+$heading-color: #f90b6d;
+$text-color: #666666;
+
+// Spacing
+:root {
+  --page-width: 1280px;
+  --section-spacing: 160px;
+  --header-height: 100px;
+  --form-width: 450px;
+}
