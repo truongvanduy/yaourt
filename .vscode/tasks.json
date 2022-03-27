@@ -6,7 +6,7 @@
     {
       "label": "Run Pug command",
       "type": "shell",
-      "command": "pug views/trangchu.pug ./trangchu.html --watch --pretty",
+      "command": "pug views/trangchu.pug ./index.html --watch --pretty",
       "problemMatcher": []
     },
     {
