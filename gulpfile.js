@@ -45,3 +45,5 @@ gulp.task('watch', () => {
 
 // Run all
 gulp.task('default', gulp.series('run', 'watch'));
+
+// Deploy
