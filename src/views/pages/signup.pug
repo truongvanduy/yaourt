@@ -1,0 +1,52 @@
+extends ../layouts/layout
+
+block vars 
+  -title = 'Freeze: Đăng ký'
+  -mainClass = 'login-main'
+
+block container  
+  section.login-section.px
+  form.form.contact-form(action='#' autocomplete='off' list='autocompleteOff')
+    .form-inner
+      h1.heading.heading--01.heading--center Đăng ký
+      // Email
+      .form-group
+        label.form-icon(for='form-email')
+          i.fa-solid.fa-envelope
+        input#form-email.form-input.contact-form-input(type='email' name='full-name' placeholder='Email' required='' list='autocompleteOff')
+      // Password
+      .form-group
+        label.form-icon(for='form-password')
+          i.fa-solid.fa-lock
+        input#form-password.form-input.form-password(type='password' name='password' placeholder='Mật khẩu' required='')
+      // Password confirmation
+      .form-group
+        label.form-icon(for='form-confirm')
+          i.fa-solid.fa-circle-check
+        input#form-confirm.form-input.form-confirm(type='password' name='password confirmation' placeholder='Nhập lại mật khẩu' required='')
+      // Member type
+      .form-group.form-radio-group
+        .form-icon
+          i.fa-solid.fa-people-group
+        label.form-radio-set
+          input#member-silver.form-radio-input(type='radio' name='member-type')
+          .form-radio-label
+          span.form-radio-desc Bạc
+        label.form-radio-set
+          input#member-gold.form-radio-input(type='radio' name='member-type')
+          .form-radio-label
+          span.form-radio-desc Vàng
+        label.form-radio-set
+          input#member-platinum.form-radio-input(type='radio' name='member-type')
+          .form-radio-label
+          span.form-radio-desc Bạch kim
+      // Form message
+      p.form-message
+        | Thông qua việc tạo tài khoản, bạn đồng ý với 
+        a.x-link(href='#')
+          | Điều khoản
+          | và
+          | quyền riêng tư
+        |  của chúng tôi
+      button.form-submit.contact-form-submit.btn(type='submit')
+        span Đăng ký

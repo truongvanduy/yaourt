@@ -1,0 +1,22 @@
+mixin productItem(imgSrc, name, desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugiat voluptatum odio, neque praesentium exercitationem eveniet totam accusamus, beatae cumque consectetur quisquam accusantium? Doloribus, magni explicabo dicta ipsum reiciendis itaque?')
+  .product-item
+    .product-img
+      img(src= imgSrc alt= name)
+    .product-info
+      h2.product-name.heading.heading--02.heading--center= name
+      p.product-desc= desc
+        a.x-link(href='#')
+    .product-line
+    .product-buy 
+      label.product-quantity
+        span.product-quantity-text Số lượng
+        input.product-quantity-input(type='number' name='product-quantity' min='1' max='99' value='1')
+      button.btn.product-buy-btn.form-submit
+        span.fa-solid.fa-cart-arrow-down
+
+mixin categoryItem(name)
+  section.section.product-section.px
+    h1.product-heading.heading.heading--01.heading--center= name
+    .product-container
+      block
+

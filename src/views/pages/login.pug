@@ -1,0 +1,33 @@
+extends ../layouts/layout
+
+block vars 
+  -title = 'Freeze: Đăng nhập'
+  -mainClass = 'login-main'
+
+block container  
+  section.login-section.px
+  form.form.contact-form(action='#' autocomplete='off' list='autocompleteOff')
+    .form-inner
+      h1.heading.heading--01.heading--center Đăng nhập
+      // Email
+      .form-group
+        label.form-icon(for='form-email')
+          i.fa-solid.fa-envelope
+        input#form-email.form-input.contact-form-input(type='email' name='full-name' placeholder='Email' required='' list='autocompleteOff')
+      // Password
+      .form-group
+        label.form-icon(for='form-password')
+          i.fa-solid.fa-lock
+        input#form-password.form-input.form-password(type='password' name='password' placeholder='Mật khẩu' required='')
+      // Forget password
+      p.form-get-password
+        a.x-link(href='#')
+          | Quên mật khẩu?
+      // Save credentials
+      .form-group
+        label.form-checkbox-set
+          input#save-credential.form-checkbox-input(type='checkbox' name='save-credential')
+          .form-checkbox-label
+          p.form-message.form-checkbox-message Ghi nhớ cho lần đăng nhập sau
+      button.form-submit.contact-form-submit.btn(type='submit')
+        span Đăng ký

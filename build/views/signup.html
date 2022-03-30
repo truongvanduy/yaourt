@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Freeze: Đăng ký</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"><a class="logo" id="logo"><img src="../images/logo.png" alt="Freeeze"></a>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item"><a class="menu-link" href="./index.html">Trang chủ</a></li>
+            <li class="menu-item"><a class="menu-link" href="./about.html">Giới thiệu</a></li>
+            <li class="menu-item"><a class="menu-link" href="./product.html">Sản phẩm</a></li>
+            <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a></li>
+            <li class="menu-item"><a class="menu-link" href="./login.html">Đăng nhập</a></li>
+            <li class="menu-item"><a class="menu-link" href="./signup.html">Đăng ký</a></li>
+            <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a></li>
+            <div class="header-underline-bar"></div>
+          </ul>
+          <div class="header-action">
+            <label class="header-search">
+              <input class="header-search-input" type="text" name="search" id="#search" placeholder="Chọn kem thôi!">
+              <button class="header-search-btn btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+            <div class="header-cart btn"><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+        </nav>
+        <div class="header-img"><img class="header-img-1" src="../images/header-img1.png" alt=""><img class="header-img-2" src="../images/header-img2.png" alt=""><img class="header-img-3" src="../images/header-img3.png" alt=""></div>
+      </header>
+      <main class="main login-main">
+        <section class="login-section px"></section>
+        <form class="form contact-form" action="#" autocomplete="off" list="autocompleteOff">
+          <div class="form-inner">
+            <h1 class="heading heading--01 heading--center">Đăng ký</h1>
+            <!-- Email-->
+            <div class="form-group">
+              <label class="form-icon" for="form-email"><i class="fa-solid fa-envelope"></i></label>
+              <input class="form-input contact-form-input" id="form-email" type="email" name="full-name" placeholder="Email" required="" list="autocompleteOff">
+            </div>
+            <!-- Password-->
+            <div class="form-group">
+              <label class="form-icon" for="form-password"><i class="fa-solid fa-lock"></i></label>
+              <input class="form-input form-password" id="form-password" type="password" name="password" placeholder="Mật khẩu" required="">
+            </div>
+            <!-- Password confirmation-->
+            <div class="form-group">
+              <label class="form-icon" for="form-confirm"><i class="fa-solid fa-circle-check"></i></label>
+              <input class="form-input form-confirm" id="form-confirm" type="password" name="password confirmation" placeholder="Nhập lại mật khẩu" required="">
+            </div>
+            <!-- Member type-->
+            <div class="form-group form-radio-group">
+              <div class="form-icon"><i class="fa-solid fa-people-group"></i></div>
+              <label class="form-radio-set">
+                <input class="form-radio-input" id="member-silver" type="radio" name="member-type">
+                <div class="form-radio-label"></div><span class="form-radio-desc">Bạc</span>
+              </label>
+              <label class="form-radio-set">
+                <input class="form-radio-input" id="member-gold" type="radio" name="member-type">
+                <div class="form-radio-label"></div><span class="form-radio-desc">Vàng</span>
+              </label>
+              <label class="form-radio-set">
+                <input class="form-radio-input" id="member-platinum" type="radio" name="member-type">
+                <div class="form-radio-label"></div><span class="form-radio-desc">Bạch kim</span>
+              </label>
+            </div>
+            <!-- Form message-->
+            <p class="form-message">Thông qua việc tạo tài khoản, bạn đồng ý với <a class="x-link" href="#">
+                Điều khoản
+                và
+                quyền riêng tư</a> của chúng tôi</p>
+            <button class="form-submit contact-form-submit btn" type="submit"><span>Đăng ký</span></button>
+          </div>
+        </form>
+      </main>
+      <footer class="footer">
+        <p class="footer-rights">© Bản quyền thuộc về FreeezeVN.</p>
+        <div class="footer-social"><a class="footer-social-link" href=""><i class="fa-brands fa-facebook-f"></i></a><a class="footer-social-link" href=""><i class="fa-brands fa-twitter"></i></a><a class="footer-social-link" href=""><i class="fa-brands fa-pinterest-p"></i></a></div>
+      </footer><a class="btn back-to-top" href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

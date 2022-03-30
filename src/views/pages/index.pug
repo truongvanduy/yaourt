@@ -1,0 +1,89 @@
+extends ../layouts/layout
+
+block vars 
+  -title = 'Freeeze' 
+  -mainClass = 'main-landing'
+
+block container 
+  article.article
+    //- Banner
+    section.banner
+      img(src='../images/trangchu/bg-home.jpg' alt='banner')
+    //- New Product
+    section.section.px
+      h1.heading.heading--01.heading--center Sản phẩm mới
+      .section-main
+        .section-img
+          img(src='../images/trangchu/yogurt.jpg' alt='yogurt')
+        .section-desc
+          h2.heading.heading--02.heading--left Sữa chua tốt cho sức khỏe
+          .section-text
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum asperiores
+            | facilis
+            | quam et! Possimus qui quo suscipit, illum incidunt omnis nulla nostrum odit est eaque, totam, modi
+            | voluptate? At, inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid optio
+            | enim cum sunt, rem repellat quis labore distinctio molestiae reprehenderit ullam hic, consequatur
+            | dolorem sapiente nobis tenetur ad eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            | Aliquam rerum, et cumque autem perspiciatis ut at dolorum eum omnis, quam natus ab labore debitis? Atque
+            | dolorem officia vitae sequi et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ex
+            | doloremque suscipit iusto laboriosam placeat esse quae voluptates, laborum accusantium dolor impedit
+            | similique recusandae cupiditate veniam hic officiis eveniet omnis?
+    //- Members
+    section.section.px
+      h1.heading.heading--01.heading--center Góc thành viên
+      .section-main
+        .section-desc
+          h2.heading.heading--02.heading--left Sữa chua làm nhà
+          .section-text
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum asperiores
+            | facilis
+            | quam et! Possimus qui quo suscipit, illum incidunt omnis nulla nostrum odit est eaque, totam, modi
+            | voluptate? At, inventore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste aliquid optio
+            | enim cum sunt, rem repellat quis labore distinctio molestiae reprehenderit ullam hic, consequatur
+            | dolorem sapiente nobis tenetur ad eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            | Aliquam rerum, et cumque autem perspiciatis ut at dolorum eum omnis, quam natus ab labore debitis? Atque
+            | dolorem officia vitae sequi et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ex
+            | doloremque suscipit iusto laboriosam placeat esse quae voluptates?
+        .section-img
+          video(controls='' src='../images/trangchu/yogurt.mp4')
+    //- Guide
+    section.landing-section.section.px
+      h1.heading.heading--01.heading--center Hướng dẫn làm sữa chua không đường
+      .landing-guide
+        .landing-ingredients
+          h3.heading.heading--03.heading--left Nguyên liệu làm sữa chua khum đường
+          ul.landing-ingredients-list
+            li.landing-ingredients-item 1 lít sữa tươi khum đường
+            li.landing-ingredients-item
+              | 1 hộp sữa chua men cái khum đường (bạn có thể mua sữa chua đóng hộp
+              | khum đường như Vinamilk, TH True Milk,...)
+            li.landing-ingredients-item Dụng cụ nấu và ủ sữa chua
+        .landing-steps
+          h3.heading.heading--03.heading--left Các bước thực hiện
+          ol.landing-steps-list
+            li.landing-steps-item
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              | accusamus obcaecati cumque perspiciatis et! Et blanditiis illo aut commodi deserunt doloribus nam
+              | atque illum!
+            li.landing-steps-item
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              | perspiciatis esse voluptatem aliquid quodtas inventore.
+            li.landing-steps-item
+              | Recusandae officia doloribus aliquid excepturi dolores culpa sunt
+              | consectetur molestiae nulla, ipsa tempora. Earum, asperiores sint?
+    //- Placing order process
+    section.section.landing-process.px
+      h1.heading.heading--01.heading--center Đặt hàng ngay
+      .landing-process-container
+        .landing-process-item
+          img(src='../images/trangchu/order_1.png' alt='')
+          span.landing-process-desc Gọi điện
+        .landing-process-item
+          img(src='../images/trangchu/order_2.png' alt='')
+          span.landing-process-desc Đặt hàng
+        .landing-process-item
+          img(src='../images/trangchu/order_3.png' alt='')
+          span.landing-process-desc Nhận hàng
+        .landing-process-item
+          img(src='../images/trangchu/order_4.png' alt='')
+          span.landing-process-desc Thanh toán

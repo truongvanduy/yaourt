@@ -1,0 +1,41 @@
+extends ../layouts/layout
+
+block vars 
+  -title = 'Freeze: Liên hệ'
+  -mainClass = 'main-contact'
+
+block container  
+  section.section.contact-section.px
+    h1.heading.heading--01.heading--center Liên hệ
+    p.contact-address
+      i.fa-solid.fa-location-dot
+      span
+        | Khoa Công nghệ thông tin và Truyền thông, trường Đại học Cần Thơ, đường 3/2 Xuân Khánh, Ninh Kiều, Cần
+        | Thơ
+    #map.contact-map
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.1043862434117!2d105.77265614218217!3d10.030644235825893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a088227ad86b19%3A0x2734ec78dd9c1c89!2zVHJ1bmcgVMOibSDEkMOhbmggR2nDoSBOxINuZyBM4buxYyBOZ2_huqFpIE5n4buvIFRyxrDhu51uZyDEkOG6oWkgSOG7jWMgQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1648607896360!5m2!1svi!2s' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+  section.section.px
+    form.form.contact-form(action='#' autocomplete='off')
+      .form-inner
+        h1.heading.heading--01.heading--center Góp ý
+        .form-group.contact-form-group
+          label.form-icon(for='contact-name')
+            i.fa-solid.fa-user-pen
+          input#contact-name.form-input.contact-form-input(type='text' name='full-name' placeholder='Họ tên')
+        .form-group.contact-form-group
+          label.form-icon(for='contact-email')
+            i.fa-solid.fa-envelope
+          input#contact-email.form-input.contact-form-input(type='email' name='full-name' placeholder='Email')
+        .form-group.contact-form-group
+          label.form-icon(for='contact-type')
+            i.fa-solid.fa-circle-dot
+          select#contact-type.form-select.contact-form-select(name='kind')
+            option.contact-form-option(value='0' disabled='' selected='') Về sản phẩm / dịch vụ
+            option.contact-form-option(value='1') Về sản phẩm
+            option.contact-form-option(value='2') Về dịch vụ
+        .form-group.contact-form-group
+          label.form-icon(for='contact-message')
+            i.fa-solid.fa-message
+          textarea#contact-message.contact-form-message(name='contact-message' cols='30' rows='6' placeholder='Góp ý đi!')
+        button.form-submit.contact-form-submit.btn(type='submit')
+          span Gửi

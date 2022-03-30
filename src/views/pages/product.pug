@@ -1,0 +1,21 @@
+extends ../layouts/layout
+
+block vars 
+  -title = 'Freeze: Sản phẩm'
+  -mainClass = 'main-contact'
+
+block container  
+  main.main.product-main
+    article.product-article
+      +categoryItem('Sản phẩm truyền thống')
+        +productItem('../images/sanpham/kiwi.jpg', 'Sữa chua vị Kiwi')
+        +productItem('../images/sanpham/mango.jpg', 'Sữa chua vị Xoài')
+        +productItem('../images/sanpham/cantaloupe.jpg', 'Sữa chua vị Dứa')
+      +categoryItem('Sản phẩm mới')
+        +productItem('../images/sanpham/blackberry.jpg', 'Sữa chua vị Mâm xôi')
+        +productItem('../images/sanpham/strawberry.jpg', 'Sữa chua vị Dâu tây')
+        +productItem('../images/sanpham/blueberry.jpg', 'Sữa chua vị Việt quất')
+      +categoryItem('Sản phẩm trái cây miền nhiệt đới')
+        +productItem('../images/sanpham/grapes.jpg', 'Sữa chua vị Bưởi')
+        +productItem('../images/sanpham/green-apple.jpg', 'Sữa chua vị Táo xanh')
+        +productItem('../images/sanpham/pineapple.jpg', 'Sữa chua vị Dứa')

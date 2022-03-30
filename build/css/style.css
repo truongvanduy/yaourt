@@ -407,7 +407,7 @@ ul {
   display: flex;
   gap: 20px 0;
   flex-direction: column;
-  background: linear-gradient(10deg, rgba(255, 255, 255, 0.8) 30%, transparent), url(../img/header.png);
+  background: linear-gradient(10deg, rgba(255, 255, 255, 0.8) 30%, transparent), url(../images/header.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -786,5 +786,3 @@ ul {
 .footer-social-link:hover {
   color: #ed4190;
 }
-
-/*# sourceMappingURL=style.css.map */
